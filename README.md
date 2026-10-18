@@ -22,7 +22,7 @@ O NJR BANK é um projeto de desenvolvimento front-end que apresenta uma tela de 
 
 ## 🎨 Identidade visual
 
-<img width="808" height="450" alt="image" src="https://github.com/user-attachments/assets/c254623f-1d34-4b46-9897-91babf9c2b36" />
+<img width="1333" height="672" alt="image" src="https://github.com/user-attachments/assets/510da609-9893-4940-bfeb-871bba122dfc" />
 
 
 O projeto utiliza uma combinação de cores que reforça a proposta de um banco digital premium.
