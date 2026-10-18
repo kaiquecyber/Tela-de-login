@@ -22,6 +22,9 @@ O NJR BANK é um projeto de desenvolvimento front-end que apresenta uma tela de 
 
 ## 🎨 Identidade visual
 
+<img width="808" height="450" alt="image" src="https://github.com/user-attachments/assets/c254623f-1d34-4b46-9897-91babf9c2b36" />
+
+
 O projeto utiliza uma combinação de cores que reforça a proposta de um banco digital premium.
 
 | Cor | Código | Aplicação |
@@ -44,25 +47,6 @@ NJR-BANK/
 
 *Observação: a estrutura acima representa a organização esperada dos arquivos. Ajuste os nomes e caminhos conforme a estrutura real do seu repositório.*
 
-## 🚀 Como executar o projeto
-
-1. Clone este repositório:
-
-   ```bash
-   git clone URL_DO_SEU_REPOSITORIO
-   ```
-
-2. Entre na pasta do projeto:
-
-   ```bash
-   cd NJR-BANK
-   ```
-
-3. Verifique se o arquivo `index.html`, o arquivo `style.css` e a pasta `imagens` estão organizados corretamente.
-
-4. Abra o arquivo `index.html` no navegador para visualizar a interface.
-
-Não é necessário instalar dependências para visualizar a página estática.
 
 ## 📌 Status do projeto
 
@@ -76,7 +60,7 @@ Praticar e desenvolver habilidades em HTML5 e CSS3, explorando a criação de in
 
 ## 👨‍💻 Autor
 
-Desenvolvido por **[Seu nome]** como projeto de estudo e prática de desenvolvimento front-end.
+Desenvolvido por **kaique silva** como projeto de estudo e prática de desenvolvimento front-end.
 
 ---
 
