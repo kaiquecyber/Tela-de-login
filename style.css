@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #050505;
+    color: #F5F2EB;
+    font-family: Arial, sans-serif;
+}
+
+/* LAYOUT PRINCIPAL */
+
+.login-page {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Área visual */
+
+
+.hero {
+    flex: 1;
+    min-width: 0;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    background-color: #050505;
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+
+    border-right: 1px solid #28231A;
+}
+
+/* RETRATO PRINCIPAL */
+.Neymar-image {
+    position: absolute;
+    pointer-events: none;
+    height: 800px;
+    width: -200px;
+    left: -2%;
+    bottom:-2%;
+    object-fit: contain;
+    object-position: left bottom;
+    z-index: 1;
+
+    -webkit-mask-image: linear-gradient(
+        to right,
+        black 58%,
+        transparent 100%
+    );
+
+    mask-image: linear-gradient(
+        to right,
+        black 58%,
+        transparent 100%
+    );
+}
+
+.floating-card {
+    position: absolute;
+    pointer-events: none;
+    width: 29%; /* define a largura */
+    left: 43%; /* posicionam o elemento a partir da esquerda */
+    height: auto;
+    right: 10%;
+    top: 35%;
+    z-index: 1;
+
+    mix-blend-mode: screen;
+    filter: drop-shadow(0 12px 25px rgba(201, 164, 92, 0.18));
+
+    animation: card-float 5s ease-in-out infinite;
+}
+
+@keyframes card-float {
+    0%, 100% {
+        transform: translateY(0) rotate(-2deg); /* ROTAÇÃO DIREIRA OU ESQUERDA */
+    }
+
+    50% {
+        transform: translateY(-14px) rotate(0deg); /* DE CIMA PARA BAIXO  */
+    }
+}
+
+/* transição suave entre o cartão e a coluna de login */
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    pointer-events: none;
+
+    background: linear-gradient(
+        90deg,
+        transparent 45%,
+        rgba(5, 5, 5, 0.25) 70%,
+        #050505 100%
+    );
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .floating-card {
+        animation: none;
+    }
+}
+
+
+
+.hero-content {
+    display: none;
+}
+
+.hero-content h1 {
+    color: #C9A45C;
+    font-size: 42px;
+    letter-spacing: 5px;
+}
+
+.hero-content p {
+    margin-top: 18px;
+    color: #C9A45C;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+/* Área do formulario*/
+
+.login-section {
+    width: 400px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #050505;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 340px;
+}
+
+
+.login-box h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+.subtitle {
+    color: #8A8A8A;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+/* CAMPOS */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    color: #F5F2EB;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.form-group input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #171717;
+    color: #F5F2EB;
+    border: 1px solid #383838;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.form-group input::placeholder {
+    color: #8A8A8A;
+}
+
+.form-group input:focus {
+    border-color: #C9A45C;
+    box-shadow: 0 0 0 2px
+    rgba(201, 164, 92, 0.12) ;
+}
+
+/* LOGIN E BOTÕES */
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin: 5px 0 25px;
+    color: #C9A45C;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.login-button {
+    width: 100%;
+    padding: 16px;
+    background-color: #C9A45C;
+    color: #050505;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition:0.3s;
+}
+
+.login-button:hover{
+    background-color: #E0BD78;
+}
+
+.register{
+    margin-top: 28px;
+    text-align: center;
+    color: #8A8A8A;
+    font-size: 13px;
+}
+
+.register a {
+    color: #C9A45C;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Para Chrome, Safari, Edge e Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

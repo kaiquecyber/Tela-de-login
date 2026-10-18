@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NJR BANK | Sua próxima jogada</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main class="login-page">
+
+        <!-- Área VISUAL DA PAGINA -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>NJR BANK</h1>
+                    <P>SONHE. PLANEJE. CONQUISTE.</P>
+                </div>
+            </section>
+
+            <section class="hero-imagem">
+                <img
+                    src="../imagens/Anúncio Luxuoso NJR Bank em Preto e Dourado.png"
+                    alt="Retrato Do Neymar Júnior"
+                    class="Neymar-image"
+                >
+
+                <img
+                    src="../imagens/Cartão de luxo preto e dourado do NJR.png"
+                    alt="Cartão Black NJR"
+                    class="floating-card"
+
+                >
+
+            </section>
+
+            <!-- ÁREA DE LOGIN -->
+        
+        <section class="login-section">
+            
+            <div class="login-box">
+
+                <h2>Seja Bem-vindo</h2>
+                
+                <p class="subtitle">
+                    Acesse a sua conta e continue a sua jornada.
+                </p>
+
+
+            <form id="login-form">
+
+                <div class="form-group">
+
+                    <label for="cpf">CPF</label>
+                    <input 
+                        type="number"
+                        id="CPF"
+                        name="CPF"
+                        placeholder="Digite seu CPF"
+                        inputmode="numeric"
+                        maxlength="14"
+                        autocomplete="username"
+                        required
+                        >
+                </div>
+
+                <div class="form-group">
+
+                    <label for="senha">Senha</label>
+
+                    <div class="password-wrapper">
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        placeholder="Digite sua senha"
+                        autocomplete="current-password"
+                        required
+                    >
+                </div>
+
+                <a href="#" class="forgot-password">
+                    Esqueci a minha senha
+                </a>
+
+                <button type="submit" class="login-button">
+                    ENTRAR NA MINHA CONTA
+                </button>
+
+                <p id="login-message" class="login-message"
+                role="status"></p>
+
+            <p class="register">
+                Ainda não tem conta?
+                <a href="#">Abra a sua conta</a>
+
+                </p>
+
+                </form>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    
+</body>
+</html>
